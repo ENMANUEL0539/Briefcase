@@ -1,0 +1,40 @@
+/* === CONTACTO — solo estilos de esta sección === */
+.contacto {
+  padding: 80px 24px;
+  max-width: 860px;
+  margin: 0 auto;
+  border-top: 1px solid #222226;
+}
+
+.contacto__heading {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.contacto__text {
+  color: #6b6b78;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.contacto__links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contacto__item {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #222226;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #e4e4e7;
+  transition: border-color 0.2s, color 0.2s;
+}
+.contacto__item:hover {
+  border-color: #c98a5e;
+  color: #c98a5e;
+  text-decoration: none;
+}
