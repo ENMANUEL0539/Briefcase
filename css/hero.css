@@ -1,0 +1,62 @@
+/* === HERO — solo estilos del hero === */
+.hero {
+  padding: 140px 24px 80px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.hero__name {
+  font-size: clamp(34px, 7vw, 58px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.hero__mark {
+  color: #c98a5e;
+}
+
+.hero__desc {
+  font-size: 18px;
+  color: #6b6b78;
+  max-width: 500px;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero__btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: opacity 0.2s, transform 0.15s;
+}
+.hero__btn:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.hero__btn--filled {
+  background: #c98a5e;
+  color: #0b0b0d;
+}
+.hero__btn--filled:hover {
+  opacity: 0.9;
+}
+
+.hero__btn--outline {
+  border: 1px solid #222226;
+  color: #e4e4e7;
+}
+.hero__btn--outline:hover {
+  border-color: #c98a5e;
+  color: #c98a5e;
+}
