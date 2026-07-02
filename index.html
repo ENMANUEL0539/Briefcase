@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enmanuel — Portfolio</title>
+  <meta name="description" content="Portfolio personal de Enmanuel.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>E</text></svg>">
+
+  <!-- BASE: reset mínimo. No quitar. -->
+  <link rel="stylesheet" href="css/base.css">
+
+  <!-- SECCIONES: borra la línea para desactivar esa sección -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/proyectos.css">
+  <link rel="stylesheet" href="css/sobre-mi.css">
+  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+
+<!-- ==============================================
+     SECCIÓN: HEADER
+     CSS propio: css/header.css
+     Para ELIMINAR: borra desde aquí hasta "FIN HEADER"
+     y quita <link rel="stylesheet" href="css/header.css">
+     ============================================== -->
+<header class="header">
+  <div class="header__inside">
+    <a href="./" class="header__logo">Enmanuel</a>
+    <nav class="header__nav" id="nav">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="header__toggle" onclick="document.getElementById('nav').classList.toggle('header__nav--open')" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<!-- FIN HEADER -->
+
+
+<!-- ==============================================
+     SECCIÓN: HERO
+     CSS propio: css/hero.css
+     Para ELIMINAR: borra desde aquí hasta "FIN HERO"
+     y quita <link rel="stylesheet" href="css/hero.css">
+     ============================================== -->
+<section class="hero">
+  <div class="hero__inside">
+    <h1 class="hero__name">Hola, soy <span class="hero__mark">Enmanuel Ramirez</span></h1>
+    <p class="hero__desc">Hybrid Technology Freelancer | IT Enthusiast | Full Stack Development in Progress | Python & JavaScript Technology
+     como Desarrollador web . Construyo cosas con código,
+      me enfoco en que sean modernas, elegantes pero sobre todo que cumplan las funciones que el cliente desea conseguir.
+    </p>
+    <div class="hero__buttons">
+      <a href="#proyectos" class="hero__btn hero__btn--filled">Ver proyectos</a>
+      <a href="#contacto" class="hero__btn hero__btn--outline">Contacto</a>
+    </div>
+  </div>
+</section>
+<!-- FIN HERO -->
+
+
+<!-- ==============================================
+     SECCIÓN: PROYECTOS
+     CSS propio: css/proyectos.css
+     Para ELIMINAR: borra desde aquí hasta "FIN PROYECTOS"
+     y quita <link rel="stylesheet" href="css/proyectos.css">
+     ============================================== -->
+<section id="proyectos" class="proyectos">
+  <div class="proyectos__inside">
+    <h2 class="proyectos__heading">Proyectos</h2>
+    <div class="proyectos__grid">
+
+      <!-- Tarjeta 1 — copia este bloque para agregar más -->
+      <article class="proyecto">
+        <h3 class="proyecto__name">Nombre del Proyecto</h3>
+        <p class="proyecto__desc">Descripción de lo que hace, qué problema resuelve o qué aprendiste haciéndolo.</p>
+        <div class="proyecto__techs">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <a href="https://github.com/ENMANUEL0539" target="_blank" class="proyecto__link">Ver proyecto →</a>
+      </article>
+      <!-- Fin tarjeta 1 -->
+
+      <!-- Tarjeta 2 -->
+      <article class="proyecto">
+        <h3 class="proyecto__name">Otro Proyecto</h3>
+        <p class="proyecto__desc">Copia el bloque &lt;article class="proyecto"&gt; para agregar cuantos quieras.</p>
+        <div class="proyecto__techs">
+          <span>React</span>
+          <span>Tailwind</span>
+        </div>
+        <a href="#" target="_blank" class="proyecto__link">Ver proyecto →</a>
+      </article>
+      <!-- Fin tarjeta 2 -->
+
+      <!-- Tarjeta 3 -->
+      <article class="proyecto">
+        <h3 class="proyecto__name">Un Proyecto Más</h3>
+        <p class="proyecto__desc">Cada tarjeta es independiente. Sin variables compartidas. Sin archivos de datos.</p>
+        <div class="proyecto__techs">
+          <span>Python</span>
+          <span>Flask</span>
+        </div>
+        <a href="#" target="_blank" class="proyecto__link">Ver proyecto →</a>
+      </article>
+      <!-- Fin tarjeta 3 -->
+
+    </div>
+  </div>
+</section>
+<!-- FIN PROYECTOS -->
+
+
+<!-- ==============================================
+     SECCIÓN: SOBRE MÍ
+     CSS propio: css/sobre-mi.css
+     Para ELIMINAR: borra desde aquí hasta "FIN SOBRE MÍ"
+     y quita <link rel="stylesheet" href="css/sobre-mi.css">
+     ============================================== -->
+<section id="sobre-mi" class="sobre-mi">
+  <div class="sobre-mi__inside">
+    <h2 class="sobre-mi__heading">Sobre mí</h2>
+    <div class="sobre-mi__text">
+      <p>Escribe lo que quieras aquí. Tu formación, tus intereses, lo que estás aprendiendo, o lo que te motiva a programar.</p>
+      <p>No hay archivos de datos separados. Este texto está directamente en el HTML y lo editas aquí mismo, en este archivo, en esta línea.</p>
+    </div>
+  </div>
+</section>
+<!-- FIN SOBRE MÍ -->
+
+
+<!-- ==============================================
+     SECCIÓN: CONTACTO
+     CSS propio: css/contacto.css
+     Para ELIMINAR: borra desde aquí hasta "FIN CONTACTO"
+     y quita <link rel="stylesheet" href="css/contacto.css">
+     ============================================== -->
+<section id="contacto" class="contacto">
+  <div class="contacto__inside">
+    <h2 class="contacto__heading">Contacto</h2>
+    <p class="contacto__text">Si quieres hablar o trabajar juntos:</p>
+    <div class="contacto__links">
+      <a href="mailto:tu-email@ejemplo.com" class="contacto__item">tu-email@ejemplo.com</a>
+      <a href="https://github.com/ENMANUEL0539" target="_blank" class="contacto__item">GitHub</a>
+      <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="contacto__item">LinkedIn</a>
+    </div>
+  </div>
+</section>
+<!-- FIN CONTACTO -->
+
+
+<!-- ==============================================
+     SECCIÓN: FOOTER
+     CSS propio: css/footer.css
+     Para ELIMINAR: borra desde aquí hasta "FIN FOOTER"
+     y quita <link rel="stylesheet" href="css/footer.css">
+     ============================================== -->
+<footer class="footer">
+  <div class="footer__inside">
+    <span class="footer__copy">2025 Enmanuel</span>
+    <a href="https://github.com/ENMANUEL0539" target="_blank" class="footer__link">GitHub</a>
+  </div>
+</footer>
+<!-- FIN FOOTER -->
+
+</body>
+</html>
