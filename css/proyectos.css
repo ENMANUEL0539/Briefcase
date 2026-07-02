@@ -1,0 +1,76 @@
+/* === PROYECTOS — solo estilos de esta sección === */
+.proyectos {
+  padding: 80px 24px;
+  max-width: 860px;
+  margin: 0 auto;
+  border-top: 1px solid #222226;
+}
+
+.proyectos__heading {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+
+.proyectos__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 560px) {
+  .proyectos__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* === Cada tarjeta de proyecto === */
+.proyecto {
+  background: #141416;
+  border: 1px solid #222226;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s;
+}
+.proyecto:hover {
+  border-color: #c98a5e;
+}
+
+.proyecto__name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.proyecto__desc {
+  font-size: 14px;
+  color: #6b6b78;
+  margin-bottom: 16px;
+  flex: 1;
+  line-height: 1.6;
+}
+
+.proyecto__techs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.proyecto__techs span {
+  font-size: 12px;
+  padding: 3px 10px;
+  background: #0b0b0d;
+  border-radius: 20px;
+  color: #6b6b78;
+  font-weight: 500;
+}
+
+.proyecto__link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #c98a5e;
+}
+.proyecto__link:hover {
+  text-decoration: none;
+}
