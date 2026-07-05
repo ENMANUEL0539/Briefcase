@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credenciales — Enmanuel</title>
+  <meta name="description" content="Credenciales y certificaciones de Enmanuel.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+  <!-- BASE -->
+  <link rel="stylesheet" href="css/base.css">
+
+  <!-- SECCIONES que esta página usa -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/credenciales.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+
+<!-- ==============================================
+     SECCIÓN: HEADER (misma de inicio)
+     ============================================== -->
+<header class="header">
+  <div class="header__inside">
+    <a href="./index.html" class="header__logo">
+      <img src="images/logo.svg" alt="Logo Enmanuel" class="header__logo-img">
+      <span>Enmanuel</span>
+    </a>
+    <nav class="header__nav" id="nav">
+      <a href="index.html#proyectos">Proyectos</a>
+      <a href="index.html#sobre-mi">Sobre mí</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="credenciales.html">Credenciales</a>
+    </nav>
+    <button class="header__toggle" onclick="document.getElementById('nav').classList.toggle('header__nav--open')" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<!-- FIN HEADER -->
+
+
+<!-- ==============================================
+     SECCIÓN: CREDENCIALES
+     CSS propio: css/credenciales.css
+     Para ELIMINAR: borra desde aquí hasta "FIN CREDENCIALES"
+     y quita <link rel="stylesheet" href="css/credenciales.css">
+     ============================================== -->
+<section class="creds">
+  <div class="creds__inside">
+    <h1 class="creds__title">Credenciales</h1>
+    <p class="creds__subtitle">Certificaciones y validaciones que he obtenido.</p>
+
+    <div class="creds__grid">
+
+      <!-- Credencial 1 — copia este bloque para agregar más -->
+      <article class="cred">
+        <img src="images/credencial-1.jpg" alt="Credencial 1" class="cred__img">
+        <div class="cred__body">
+          <h3 class="cred__name">Nombre de la Certificación</h3>
+          <p class="cred__desc">Descripción breve de qué es esta credencial, qué validó, y qué organismo la emite.</p>
+          <div class="cred__buttons">
+            <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="cred__btn cred__btn--linkedin">
+              Ver en LinkedIn
+            </a>
+            <a href="https://enlace-de-validacion.com/verificar" target="_blank" class="cred__btn cred__btn--verify">
+              Verificar credencial
+            </a>
+          </div>
+        </div>
+      </article>
+      <!-- Fin credencial 1 -->
+
+      <!-- Credencial 2 -->
+      <article class="cred">
+        <img src="images/credencial-2.jpg" alt="Credencial 2" class="cred__img">
+        <div class="cred__body">
+          <h3 class="cred__name">Otra Certificación</h3>
+          <p class="cred__desc">Copia el bloque article class="cred" para agregar cuantas credenciales quieras.</p>
+          <div class="cred__buttons">
+            <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="cred__btn cred__btn--linkedin">
+              Ver en LinkedIn
+            </a>
+            <a href="https://enlace-de-validacion.com/verificar" target="_blank" class="cred__btn cred__btn--verify">
+              Verificar credencial
+            </a>
+          </div>
+        </div>
+      </article>
+      <!-- Fin credencial 2 -->
+
+    </div>
+  </div>
+</section>
+<!-- FIN CREDENCIALES -->
+
+
+<!-- ==============================================
+     SECCIÓN: FOOTER
+     ============================================== -->
+<footer class="footer">
+  <div class="footer__inside">
+    <span class="footer__copy">2025 Enmanuel</span>
+    <a href="https://github.com/ENMANUEL0539" target="_blank" class="footer__link">GitHub</a>
+  </div>
+</footer>
+<!-- FIN FOOTER -->
+
+</body>
+</html>
