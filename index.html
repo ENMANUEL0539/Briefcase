@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enmanuel - Briefcase</title>
+  <title>Enmanuel — Portfolio</title>
   <meta name="description" content="Portfolio personal de Enmanuel.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>E</text></svg>">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
 
-  <!-- BASE: reset mínimo. No quitar. -->
+  <!-- BASE -->
   <link rel="stylesheet" href="css/base.css">
 
-  <!-- SECCIONES: borra la línea para desactivar esa sección -->
+  <!-- SECCIONES -->
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/proyectos.css">
@@ -24,16 +24,18 @@
 <!-- ==============================================
      SECCIÓN: HEADER
      CSS propio: css/header.css
-     Para ELIMINAR: borra desde aquí hasta "FIN HEADER"
-     y quita <link rel="stylesheet" href="css/header.css">
      ============================================== -->
 <header class="header">
   <div class="header__inside">
-    <a href="./" class="header__logo">Enmanuel</a>
+    <a href="./" class="header__logo">
+      <img src="images/logo.svg" alt="Logo Enmanuel" class="header__logo-img">
+      <span>Enmanuel</span>
+    </a>
     <nav class="header__nav" id="nav">
       <a href="#proyectos">Proyectos</a>
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#contacto">Contacto</a>
+      <a href="credenciales.html">Credenciales</a>
     </nav>
     <button class="header__toggle" onclick="document.getElementById('nav').classList.toggle('header__nav--open')" aria-label="Abrir menú">
       <span></span><span></span><span></span>
@@ -71,13 +73,15 @@
      Para ELIMINAR: borra desde aquí hasta "FIN PROYECTOS"
      y quita <link rel="stylesheet" href="css/proyectos.css">
      ============================================== -->
+
 <section id="proyectos" class="proyectos">
   <div class="proyectos__inside">
     <h2 class="proyectos__heading">Proyectos</h2>
     <div class="proyectos__grid">
 
-      <!-- Tarjeta 1 — copia este bloque para agregar más -->
+      <!-- Tarjeta 1 -->
       <article class="proyecto">
+        <img src="images/proyecto-1.jpg" alt="Screenshot del Proyecto 1" class="proyecto__img">
         <h3 class="proyecto__name">Nombre del Proyecto</h3>
         <p class="proyecto__desc">Descripción de lo que hace, qué problema resuelve o qué aprendiste haciéndolo.</p>
         <div class="proyecto__techs">
@@ -87,22 +91,22 @@
         </div>
         <a href="https://github.com/ENMANUEL0539" target="_blank" class="proyecto__link">Ver proyecto →</a>
       </article>
-      <!-- Fin tarjeta 1 -->
 
       <!-- Tarjeta 2 -->
       <article class="proyecto">
+        <img src="images/proyecto-2.jpg" alt="Screenshot del Proyecto 2" class="proyecto__img">
         <h3 class="proyecto__name">Otro Proyecto</h3>
-        <p class="proyecto__desc">Copia el bloque &lt;article class="proyecto"&gt; para agregar cuantos quieras.</p>
+        <p class="proyecto__desc">Copia el bloque article para agregar cuantos quieras.</p>
         <div class="proyecto__techs">
           <span>React</span>
           <span>Tailwind</span>
         </div>
         <a href="#" target="_blank" class="proyecto__link">Ver proyecto →</a>
       </article>
-      <!-- Fin tarjeta 2 -->
 
       <!-- Tarjeta 3 -->
       <article class="proyecto">
+        <img src="images/proyecto-3.jpg" alt="Screenshot del Proyecto 3" class="proyecto__img">
         <h3 class="proyecto__name">Un Proyecto Más</h3>
         <p class="proyecto__desc">Cada tarjeta es independiente. Sin variables compartidas. Sin archivos de datos.</p>
         <div class="proyecto__techs">
@@ -111,7 +115,6 @@
         </div>
         <a href="#" target="_blank" class="proyecto__link">Ver proyecto →</a>
       </article>
-      <!-- Fin tarjeta 3 -->
 
     </div>
   </div>
