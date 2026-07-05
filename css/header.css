@@ -1,4 +1,5 @@
 /* === HEADER — solo estilos del header === */
+/* === HEADER === */
 .header {
   position: fixed;
   top: 0;
@@ -21,13 +22,25 @@
   justify-content: space-between;
 }
 
+/* Logo con imagen + texto */
 .header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 700;
   font-size: 17px;
   color: #e4e4e7;
+  text-decoration: none;
 }
 .header__logo:hover {
   text-decoration: none;
+}
+
+.header__logo-img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 4px;
 }
 
 .header__nav {
@@ -44,6 +57,9 @@
   color: #e4e4e7;
   text-decoration: none;
 }
+
+
+
 
 /* botón hamburguesa — oculto en desktop */
 .header__toggle {
